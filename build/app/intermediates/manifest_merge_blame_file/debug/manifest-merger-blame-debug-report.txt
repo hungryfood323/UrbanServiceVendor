@@ -1,0 +1,646 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.eshieldvendor.primocys"
+4    android:versionCode="2"
+5    android:versionName="1.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:3:5-67
+14-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:4:5-79
+15-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:4:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:5:5-81
+16-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:5:22-78
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:6:5-80
+17-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:6:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:7:5-79
+18-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:7:22-77
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
+19-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-65
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+20-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[:geolocator_android] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-77
+21-->[:geolocator_android] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-74
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+22-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:5-110
+23-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\17bf82a634755f9d2e1f48b722fc11d2\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\17bf82a634755f9d2e1f48b722fc11d2\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\17bf82a634755f9d2e1f48b722fc11d2\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+28
+29    <application
+29-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:8:4-66:19
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.6.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\8b1de47239f83b4ae53af2852d74d4bc\core-1.6.0\AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:11:9-43
+33        android:label="UrbanScale Vendor"
+33-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:9:9-42
+34        android:usesCleartextTraffic="true" >
+34-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:10:9-44
+35        <meta-data
+35-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:12:9-13:66
+36            android:name="com.google.android.geo.API_KEY"
+36-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:12:20-65
+37            android:value="AIzaSyCqQW9tN814NYD_MdsLIb35HRY65hHomco" />
+37-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:13:9-64
+38
+39        <activity
+39-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:14:9-42:20
+40            android:name="com.eshieldvendor.primocys.MainActivity"
+40-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:15:13-41
+41            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+41-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:18:13-163
+42            android:hardwareAccelerated="true"
+42-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:19:13-47
+43            android:launchMode="singleTop"
+43-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:16:13-43
+44            android:theme="@style/LaunchTheme"
+44-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:17:13-47
+45            android:windowSoftInputMode="adjustResize" >
+45-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:20:13-55
+46
+47            <!--
+48                 Specifies an Android theme to apply to this Activity as soon as
+49                 the Android process has started. This theme is visible to the user
+50                 while the Flutter UI initializes. After that, this theme continues
+51                 to determine the Window background behind the Flutter UI.
+52            -->
+53            <meta-data
+53-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:25:13-28:17
+54                android:name="io.flutter.embedding.android.NormalTheme"
+54-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:26:15-70
+55                android:resource="@style/NormalTheme" />
+55-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:27:15-52
+56            <!--
+57                 Displays an Android View that continues showing the launch screen
+58                 Drawable until Flutter paints its first frame, then this splash
+59                 screen fades out. A splash screen is useful to avoid any visual
+60                 gap between the end of Android's launch screen and the painting of
+61                 Flutter's first frame.
+62            -->
+63            <meta-data
+63-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:34:13-37:17
+64                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+64-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:35:15-79
+65                android:resource="@drawable/launch_background" />
+65-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:36:15-61
+66
+67            <intent-filter>
+67-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:38:13-41:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:39:17-68
+68-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:39:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:40:17-76
+70-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:40:27-74
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:45:9-47:33
+78            android:name="flutterEmbedding"
+78-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:46:13-44
+79            android:value="2" />
+79-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:47:13-30
+80        <meta-data
+80-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:48:9-49:46
+81            android:name="com.facebook.sdk.ApplicationId"
+81-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:48:20-65
+82            android:value="@string/facebook_app_id" />
+82-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:49:5-44
+83
+84        <activity
+84-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:51:1-54:40
+85            android:name="com.facebook.FacebookActivity"
+85-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:51:11-55
+86            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+86-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:52:5-102
+87            android:label="@string/app_name" />
+87-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:54:5-37
+88        <activity
+88-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:56:1-65:12
+89            android:name="com.facebook.CustomTabActivity"
+89-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:57:5-50
+90            android:exported="true" >
+90-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:58:5-28
+91            <intent-filter>
+91-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:59:5-64:21
+92                <action android:name="android.intent.action.VIEW" />
+92-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:60:9-61
+92-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:60:17-58
+93
+94                <category android:name="android.intent.category.DEFAULT" />
+94-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:9-68
+94-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:19-65
+95                <category android:name="android.intent.category.BROWSABLE" />
+95-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:62:9-70
+95-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:62:19-67
+96
+97                <data android:scheme="@string/fb_login_protocol_scheme" />
+97-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:63:9-67
+97-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:63:15-64
+98            </intent-filter>
+99        </activity>
+100
+101        <service
+101-->[:firebase_database] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+102            android:name="com.google.firebase.components.ComponentDiscoveryService"
+102-->[:firebase_database] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\c0bb6da58c02159f5250b222963f74db\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+104            android:exported="false" >
+104-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+105            <meta-data
+105-->[:firebase_database] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+106-->[:firebase_database] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_database] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+108            <meta-data
+108-->[:cloud_firestore] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+109-->[:cloud_firestore] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:cloud_firestore] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+111            <meta-data
+111-->[:firebase_auth] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+112                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+112-->[:firebase_auth] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[:firebase_auth] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+114            <meta-data
+114-->[:firebase_storage] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+115                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+115-->[:firebase_storage] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[:firebase_storage] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+117            <meta-data
+117-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36:85
+118                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+118-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:35:17-128
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-82
+120            <meta-data
+120-->[:firebase_core] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+121                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+121-->[:firebase_core] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[:firebase_core] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+124                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+124-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\7327d16810b62f3bd41c9cab63e2e00e\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+127                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+127-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\7327d16810b62f3bd41c9cab63e2e00e\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\7327d16810b62f3bd41c9cab63e2e00e\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+130                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+130-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-firestore:23.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\496b03721a8533b9aab27f3ae92203c8\jetified-firebase-firestore-23.0.0\AndroidManifest.xml:20:13-22:85
+133                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+133-->[com.google.firebase:firebase-firestore:23.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\496b03721a8533b9aab27f3ae92203c8\jetified-firebase-firestore-23.0.0\AndroidManifest.xml:21:17-111
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-firestore:23.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\496b03721a8533b9aab27f3ae92203c8\jetified-firebase-firestore-23.0.0\AndroidManifest.xml:22:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\730ff50ceca22ea4371d8324ccd1ca10\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+136                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+136-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\730ff50ceca22ea4371d8324ccd1ca10\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\730ff50ceca22ea4371d8324ccd1ca10\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-database:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\3eb4a80692d020ef48ea444238635919\jetified-firebase-database-20.0.0\AndroidManifest.xml:32:13-34:85
+139                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+139-->[com.google.firebase:firebase-database:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\3eb4a80692d020ef48ea444238635919\jetified-firebase-database-20.0.0\AndroidManifest.xml:33:17-109
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-database:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\3eb4a80692d020ef48ea444238635919\jetified-firebase-database-20.0.0\AndroidManifest.xml:34:17-82
+141            <meta-data
+141-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\abf0a1269331944b63db758a302cd0f5\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:30:13-32:85
+142                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+142-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\abf0a1269331944b63db758a302cd0f5\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:31:17-139
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\abf0a1269331944b63db758a302cd0f5\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:32:17-82
+144            <meta-data
+144-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\8023b6a1a6befa0e67112c0c4e792d79\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+145                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+145-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\8023b6a1a6befa0e67112c0c4e792d79\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+146                android:value="com.google.firebase.components.ComponentRegistrar" />
+146-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\8023b6a1a6befa0e67112c0c4e792d79\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+147        </service>
+148        <service
+148-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-15:72
+149            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+149-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-107
+150            android:exported="false"
+150-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+151            android:permission="android.permission.BIND_JOB_SERVICE" />
+151-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-69
+152        <service
+152-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-22:19
+153            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+153-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-97
+154            android:exported="false" >
+154-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+155            <intent-filter>
+155-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+156                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+156-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+156-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+157            </intent-filter>
+158        </service>
+159
+160        <receiver
+160-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-31:20
+161            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+161-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-98
+162            android:exported="true"
+162-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
+163            android:permission="com.google.android.c2dm.permission.SEND" >
+163-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-73
+164            <intent-filter>
+164-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+165                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+165-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+165-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+166            </intent-filter>
+167        </receiver>
+168
+169        <provider
+169-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:38
+170            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+170-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-102
+171            android:authorities="com.eshieldvendor.primocys.flutterfirebasemessaginginitprovider"
+171-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-88
+172            android:exported="false"
+172-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
+173            android:initOrder="99" />
+173-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-35
+174
+175        <service
+175-->[:geolocator_android] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
+176            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+176-->[:geolocator_android] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
+177            android:enabled="true"
+177-->[:geolocator_android] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
+178            android:exported="false"
+178-->[:geolocator_android] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+179            android:foregroundServiceType="location" />
+179-->[:geolocator_android] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
+180
+181        <provider
+181-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+182            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+182-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+183            android:authorities="com.eshieldvendor.primocys.flutter.image_provider"
+183-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+184            android:exported="false"
+184-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+185            android:grantUriPermissions="true" >
+185-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+186            <meta-data
+186-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+187                android:name="android.support.FILE_PROVIDER_PATHS"
+187-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+188                android:resource="@xml/flutter_image_picker_file_paths" />
+188-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+189        </provider>
+190
+191        <service
+191-->[:location] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:56
+192            android:name="com.lyokone.location.FlutterLocationService"
+192-->[:location] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-71
+193            android:enabled="true"
+193-->[:location] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-35
+194            android:exported="false"
+194-->[:location] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+195            android:foregroundServiceType="location" />
+195-->[:location] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-53
+196
+197        <receiver
+197-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+198            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+198-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+199            android:exported="true"
+199-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+200            android:permission="com.google.android.c2dm.permission.SEND" >
+200-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+201            <intent-filter>
+201-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+202                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+202-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+202-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+203            </intent-filter>
+204        </receiver>
+205        <!--
+206             FirebaseMessagingService performs security checks at runtime,
+207             but set to not exported to explicitly avoid allowing another app to call it.
+208        -->
+209        <service
+209-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+210            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+210-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+211            android:directBootAware="true"
+211-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+212            android:exported="false" >
+212-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\dab1e6b3ba2d6fcdc11b86b8acd923d0\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+213            <intent-filter android:priority="-500" >
+213-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+214                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+214-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+214-->[:firebase_messaging] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+215            </intent-filter>
+216        </service>
+217        <service
+217-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\bb54ddc9f60b4b910237ab68a930e6f4\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+218            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+218-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\bb54ddc9f60b4b910237ab68a930e6f4\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+219            android:exported="false" >
+219-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\bb54ddc9f60b4b910237ab68a930e6f4\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+220            <meta-data
+220-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\bb54ddc9f60b4b910237ab68a930e6f4\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+221                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+221-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\bb54ddc9f60b4b910237ab68a930e6f4\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+222                android:value="cct" />
+222-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\bb54ddc9f60b4b910237ab68a930e6f4\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+223        </service>
+224
+225        <activity
+225-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+226            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+226-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+227            android:excludeFromRecents="true"
+227-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+228            android:exported="true"
+228-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+229            android:launchMode="singleTask"
+229-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+230            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+230-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+231            <intent-filter>
+231-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+232                <action android:name="android.intent.action.VIEW" />
+232-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:60:9-61
+232-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:60:17-58
+233
+234                <category android:name="android.intent.category.DEFAULT" />
+234-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:9-68
+234-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:19-65
+235                <category android:name="android.intent.category.BROWSABLE" />
+235-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:62:9-70
+235-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:62:19-67
+236
+237                <data
+237-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:63:9-67
+238                    android:host="firebase.auth"
+239                    android:path="/"
+240                    android:scheme="genericidp" />
+240-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:63:15-64
+241            </intent-filter>
+242        </activity>
+243        <activity
+243-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+244            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+244-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+245            android:excludeFromRecents="true"
+245-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+246            android:exported="true"
+246-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+247            android:launchMode="singleTask"
+247-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+248            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+248-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+249            <intent-filter>
+249-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+250                <action android:name="android.intent.action.VIEW" />
+250-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:60:9-61
+250-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:60:17-58
+251
+252                <category android:name="android.intent.category.DEFAULT" />
+252-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:9-68
+252-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:19-65
+253                <category android:name="android.intent.category.BROWSABLE" />
+253-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:62:9-70
+253-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:62:19-67
+254
+255                <data
+255-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:63:9-67
+256                    android:host="firebase.auth"
+257                    android:path="/"
+258                    android:scheme="recaptcha" />
+258-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:63:15-64
+259            </intent-filter>
+260        </activity>
+261
+262        <service
+262-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+263            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+263-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+264            android:enabled="true"
+264-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+265            android:exported="false" >
+265-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+266            <intent-filter>
+266-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+267                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+267-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+267-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\d9be5f6907533630d91707d4cf6d67c3\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+268
+269                <category android:name="android.intent.category.DEFAULT" />
+269-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:9-68
+269-->C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\android\app\src\main\AndroidManifest.xml:61:19-65
+270            </intent-filter>
+271        </service>
+272
+273        <provider
+273-->[com.google.firebase:firebase-common:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\c0bb6da58c02159f5250b222963f74db\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+274            android:name="com.google.firebase.provider.FirebaseInitProvider"
+274-->[com.google.firebase:firebase-common:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\c0bb6da58c02159f5250b222963f74db\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+275            android:authorities="com.eshieldvendor.primocys.firebaseinitprovider"
+275-->[com.google.firebase:firebase-common:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\c0bb6da58c02159f5250b222963f74db\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+276            android:directBootAware="true"
+276-->[com.google.firebase:firebase-common:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\c0bb6da58c02159f5250b222963f74db\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+277            android:exported="false"
+277-->[com.google.firebase:firebase-common:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\c0bb6da58c02159f5250b222963f74db\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+278            android:initOrder="100" />
+278-->[com.google.firebase:firebase-common:20.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\c0bb6da58c02159f5250b222963f74db\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+279
+280        <receiver
+280-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:29:9-33:20
+281            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+281-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:30:13-85
+282            android:enabled="true"
+282-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:31:13-35
+283            android:exported="false" >
+283-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:32:13-37
+284        </receiver>
+285
+286        <service
+286-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:35:9-38:40
+287            android:name="com.google.android.gms.measurement.AppMeasurementService"
+287-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:36:13-84
+288            android:enabled="true"
+288-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:37:13-35
+289            android:exported="false" />
+289-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:38:13-37
+290        <service
+290-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:39:9-43:72
+291            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+291-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:40:13-87
+292            android:enabled="true"
+292-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:41:13-35
+293            android:exported="false"
+293-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:42:13-37
+294            android:permission="android.permission.BIND_JOB_SERVICE" />
+294-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\037d919a128cdd8d4b029de7e4dfa7a9\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:43:13-69
+295
+296        <provider
+296-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:12:9-20:20
+297            android:name="com.sangcomz.fishbun.FishBunFileProvider"
+297-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:13:13-68
+298            android:authorities="com.eshieldvendor.primocys.fishbunfileprovider"
+298-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:14:13-71
+299            android:exported="false"
+299-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:15:13-37
+300            android:grantUriPermissions="true" >
+300-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:16:13-47
+301            <meta-data
+301-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+302                android:name="android.support.FILE_PROVIDER_PATHS"
+302-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+303                android:resource="@xml/provider_paths" />
+303-->[:image_picker] C:\Users\JIB\Desktop\UrbanService_vendor_flutter_app\UrbanService_vendor_flutter_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+304        </provider>
+305
+306        <activity
+306-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:22:9-25:51
+307            android:name="com.sangcomz.fishbun.ui.album.AlbumActivity"
+307-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:23:13-71
+308            android:label="@string/album"
+308-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:24:13-42
+309            android:theme="@style/FishBunTheme" />
+309-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:25:13-48
+310        <activity
+310-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:26:9-28:51
+311            android:name="com.sangcomz.fishbun.ui.picker.PickerActivity"
+311-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:27:13-73
+312            android:theme="@style/FishBunTheme" />
+312-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:28:13-48
+313        <activity
+313-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:29:9-31:54
+314            android:name="com.sangcomz.fishbun.ui.detail.DetailActivity"
+314-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:30:13-73
+315            android:theme="@style/DetailViewTheme" /> <!-- Needs to be explicitly declared on P+ -->
+315-->[com.sangcomz:FishBun:0.11.2] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\0e2e9b801d1a2d51f95501dd22fdb88a\jetified-FishBun-0.11.2\AndroidManifest.xml:31:13-51
+316        <uses-library
+316-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\17bf82a634755f9d2e1f48b722fc11d2\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+317            android:name="org.apache.http.legacy"
+317-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\17bf82a634755f9d2e1f48b722fc11d2\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+318            android:required="false" />
+318-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\17bf82a634755f9d2e1f48b722fc11d2\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+319
+320        <activity
+320-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+321            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+321-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+322            android:excludeFromRecents="true"
+322-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+323            android:exported="false"
+323-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+324            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+324-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+325        <!--
+326            Service handling Google Sign-In user revocation. For apps that do not integrate with
+327            Google Sign-In, this service will never be started.
+328        -->
+329        <service
+329-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+330            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+330-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+331            android:exported="true"
+331-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+332            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+332-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\1b41513b7cfab4a5c48896c8a0196f51\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+333
+334        <activity
+334-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\24dc0c4f0e95f42e9648dbb430e88f27\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+335            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+335-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\24dc0c4f0e95f42e9648dbb430e88f27\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+336            android:exported="false"
+336-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\24dc0c4f0e95f42e9648dbb430e88f27\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+337            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+337-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\24dc0c4f0e95f42e9648dbb430e88f27\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+338
+339        <meta-data
+339-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\8bd294e17c0f57ec8de5032e8104a50e\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+340            android:name="com.google.android.gms.version"
+340-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\8bd294e17c0f57ec8de5032e8104a50e\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+341            android:value="@integer/google_play_services_version" />
+341-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\8bd294e17c0f57ec8de5032e8104a50e\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+342
+343        <uses-library
+343-->[androidx.window:window:1.0.0-beta04] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\789c663c883c1c662567c46a68640eb6\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+344            android:name="androidx.window.extensions"
+344-->[androidx.window:window:1.0.0-beta04] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\789c663c883c1c662567c46a68640eb6\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+345            android:required="false" />
+345-->[androidx.window:window:1.0.0-beta04] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\789c663c883c1c662567c46a68640eb6\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+346        <uses-library
+346-->[androidx.window:window:1.0.0-beta04] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\789c663c883c1c662567c46a68640eb6\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+347            android:name="androidx.window.sidecar"
+347-->[androidx.window:window:1.0.0-beta04] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\789c663c883c1c662567c46a68640eb6\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+348            android:required="false" />
+348-->[androidx.window:window:1.0.0-beta04] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\789c663c883c1c662567c46a68640eb6\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+349
+350        <service
+350-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\64746f8425d04317f9734ed981b21fc7\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+351            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+351-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\64746f8425d04317f9734ed981b21fc7\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+352            android:exported="false"
+352-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\64746f8425d04317f9734ed981b21fc7\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+353            android:permission="android.permission.BIND_JOB_SERVICE" >
+353-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\64746f8425d04317f9734ed981b21fc7\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+354        </service>
+355
+356        <receiver
+356-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\64746f8425d04317f9734ed981b21fc7\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+357            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+357-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\64746f8425d04317f9734ed981b21fc7\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+358            android:exported="false" />
+358-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\JIB\.gradle\caches\transforms-2\files-2.1\64746f8425d04317f9734ed981b21fc7\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+359    </application>
+360
+361</manifest>

@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/eshieldvendor/primocys/BuildConfig.java
+ com.eshieldvendor.primocys.BuildConfig
+com/venduevendor/vendue_vendor/MainActivity.java
+ com.eshieldvendor.primocys.MainActivity
